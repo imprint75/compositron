@@ -11,7 +11,7 @@ server {
     }
 
     location /static/ {
-        alias           /srv/compositron/compositron/static/;
+        alias           /srv/compositron/static/;
         error_page 403 /static/error.html;
     }
 }
