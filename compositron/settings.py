@@ -54,7 +54,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/var/log/nginx/error.log',
+            'filename': '/var/www/logs/error.log',
             'formatter': 'standard',
         },
     },
