@@ -71,3 +71,8 @@ LOGGING = {
         }
     },
 }
+
+try:
+    from compositron.localsettings import *
+except ImportError:
+    pass
