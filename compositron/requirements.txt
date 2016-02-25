@@ -1,0 +1,8 @@
+django==1.9.2
+# MySQL-python
+python-memcached
+requests
+# uwsgi
+# lxml
+# Pillow
+# django-extensions
