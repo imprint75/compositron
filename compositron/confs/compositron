@@ -1,0 +1,17 @@
+server {
+    listen 80;
+    server_name compositron.com www.compositron.com;
+
+    access_log /var/www/logs/access.log;
+    error_log /var/www/logs/error.log;
+
+    location / {
+        include         uwsgi_params;
+        uwsgi_pass      unix:///run/uwsgi/app/compositron/socket;
+    }
+
+    location /static/ {
+        alias           /srv/compositron/compositron/static/;
+        error_page 403 /static/error.html;
+    }
+}
